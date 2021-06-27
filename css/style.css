@@ -1,0 +1,357 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* header suru */
+header *{
+    color:white;
+}
+
+header{
+  background:  rgba(18, 41, 34, 0.76);
+  height: 70px;
+margin: 0px;
+     
+}
+
+span{
+    color:rgba(10, 204, 172, 0.651);
+}
+
+.line sub{
+    color:rgba(47, 160, 141, 0.582);
+    font-size:10px;
+}
+header .logo{
+    margin-left: 50px;
+    
+    float: left;
+    height: inherit;
+    
+}
+
+.logo h1{
+    font-size: 45px;
+    margin: 8px;
+}
+
+header ul{
+    float: right;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+     
+    
+}
+
+
+
+
+header ul li{
+    float: left;
+    position: relative;
+   
+}
+
+
+header ul li a{
+    display: block;
+    padding: 24px;
+    font-size: 1.2em;
+    text-decoration: none;
+    
+    
+}
+
+
+
+header ul li a:hover{
+    background: rgb(65, 167, 180);
+    transition: 1s;
+}
+header ul li ul {
+    position: absolute;
+    right: 0px;
+    width: 120px;
+    top:69px;
+    background: rgb(56, 114, 106);
+   
+}
+
+.drop-1{
+    left: -30px;
+    width: 154px;
+    display: none;
+}
+header ul li ul li{
+    width: 100%;
+    text-align: center;
+    border: 1px solid blanchedalmond;
+    padding: 0px;
+}
+
+#logout{
+    display: none;
+}
+.drop-1 li:nth-child(1){
+    border:none
+}
+
+
+header ul li ul li a:hover{
+    background: rgba(160, 160, 139, 0.867);
+    transition: 0.5s;
+    
+}
+.dropdown{
+    display: none;
+}
+
+@media only screen and (max-width:800px){
+ 
+
+  header ul{
+      width:100%;
+      background:  rgba(18, 41, 34, 0.76);;
+      display: none;
+      padding: 4px;
+  }
+
+  header ul li{
+    width: 100%;
+    margin-left: 20px;
+    position: relative;
+}
+
+header ul li a{
+    width: 20%;
+    
+    text-align: center;
+}
+
+header ul li a:hover{
+    border: 2px solid #dddd;
+    transition: 1s;
+    background: none;
+}
+
+
+header ul li ul {
+    position:absolute;
+    display: block;
+    width: 100%;
+    background: rgb(56, 114, 106);
+    
+}
+
+
+.drop-1{
+    position: static;
+    display: block;
+    width: 100%;
+    background: rgb(56, 114, 106);
+     display: none; 
+}
+
+ 
+.dropdown{
+    display: block;
+    float: right;
+    padding:22px ;
+    cursor:pointer ;
+    font-size: 25px;
+}
+
+
+}
+
+
+
+
+/* header shes */
+
+
+
+
+
+.container{
+    background: #dddd;
+
+    display: flex;
+    
+    width: 100%;
+   height: 400px;
+}
+
+
+.right{
+    border-left: 10px solid cadetblue;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.left{
+  
+    width: 50%;
+    
+    border-right: 10px solid cadetblue;
+   
+}
+img{
+    height: 100px;
+    width:100px;
+    border-radius: 50px;
+    margin: 10px;
+}
+
+p{
+    margin-left: 10px;
+    font-size: 25px;
+}
+ .right input{
+
+    width: 30%;
+    margin-left: 45px;
+    padding: 6px;
+}
+
+
+
+.right label{
+    font-size: 24px;
+    padding: 20px;
+}
+
+
+
+#submit{
+    margin-left: 43px;
+    width: 15%;
+    margin-top: 37px;
+}
+
+.right span {
+    margin-left: 30px;
+}
+
+#sign{
+    margin-left: 30px;
+
+}
+
+.footer *{
+    color:white;
+}
+
+
+.footer{
+    
+    background: rgb(97, 92, 92);
+    width: 100%;
+    height: 200px;
+    margin-top: -17px;
+    
+}
+
+.footer h3{
+    text-align: center;
+}
+@media only screen and (max-width:800px) {
+
+.container{
+    flex-direction:column;
+    align-items: center;
+   
+}
+
+.right{
+    width: 100%;
+    border: none;
+    height: 500px;
+    border: 1px solid #cccc;
+}
+.left{
+    background-color: cornflowerblue;
+    border:none;
+    margin-bottom: 2px;
+    width: 100%;
+    
+}
+    
+}
+@media only screen and (max-width:600px){
+    header .logo{
+        margin: 0px;
+        float: left;
+        height: inherit;
+        
+    }
+
+    .logo h1{
+        font-size: 30px;
+       
+    }
+
+    .right{
+       
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom:0px;
+    }
+
+    input{
+
+        width: 70%;
+        
+        padding: 6px;
+        margin: 0px;
+    }
+
+
+    label{
+        margin-right: 30px;
+    }
+    #submit{
+        width: 30%;
+        margin: 21px;
+    }
+
+  .right  span{
+        margin:0px;
+ margin-right: 0px;
+    }
+
+    #sign{
+        margin-left: 0px;
+    }
+
+   
+}
+
+
+@media only screen and (max-width:460px){
+
+   header ul li a{
+
+    width: 40%;
+    text-align: center;
+   }
+
+   header ul li{
+       margin: 0px;
+   }
+
+}

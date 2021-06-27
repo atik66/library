@@ -1,0 +1,74 @@
+
+.container{
+
+   margin: auto;
+   width: 50%;
+   background: rgba(184, 187, 190, 0.959);
+  margin-top: 70px;
+  border-radius: 4px;
+  border: 1px solid steelblue;
+}
+
+.logo h1{
+    text-align: center;
+    color: darkblue;
+
+}
+
+.content{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.content label ,.content input{
+ width: 50%;
+
+ padding: 5px;
+}
+
+.option{  
+      margin:auto;
+      margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+input{
+    border-radius: 10px;
+}
+
+label{
+    color:black;
+    font-size:20px;
+}
+
+.btn{
+    margin: 10px;
+    padding: 5px;
+}
+
+input:focus{
+    outline: none;
+}
+
+
+@media only screen and (max-width:900px){
+    
+    .container{
+
+        margin: auto;
+        width: 100%;
+        background: rgba(184, 187, 190, 0.959);
+       margin-top: 70px;
+       border-radius: 4px;
+       border: 1px solid steelblue;
+     }
+
+     .option{
+         margin: auto;
+     }
+
+}
